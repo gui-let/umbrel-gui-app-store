@@ -6,9 +6,9 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
+      APP_PORT: 4000
 
   server:
-    image: node:alpine
+    image: gbletsch/hello-world:1.0.1
     user: "1000:1000"
     init: true
