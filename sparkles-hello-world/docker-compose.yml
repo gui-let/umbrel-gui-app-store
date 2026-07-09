@@ -9,6 +9,6 @@ services:
       APP_PORT: 3000
 
   server:
-    image: gbletsch/docker-static-page:latest
+    image: node:alpine
     user: "1000:1000"
     init: true
