@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: sparkles-dodge-the-blocks
+name: Dodge the blocks
+tagline: Replace this tagline with your app's tagline
+icon: https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+category: Development
+version: "1.0.0"
+port: 8000
+description: >-
+  Learning to host pygame apps in Umbrel.
+
+  Dodge the blocks
+
+developer: gbl
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+gallery:
+  - https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+  - https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+  - https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+releaseNotes: >-
+  First release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
