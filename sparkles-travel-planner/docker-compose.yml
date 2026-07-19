@@ -34,4 +34,4 @@ services:
         # APP_ e sufixo _IP -- "gbletsch-travel-planner" vira
         # APP_GBLETSCH_TRAVEL_PLANNER_IP. Cada app instalado ganha um IP
         # fixo dentro da rede interna do Umbrel.
-        ipv4_address: $APP_GBLETSCH_TRAVEL_PLANNER_IP
+        ipv4_address: $APP_SPARKLES_TRAVEL_PLANNER_IP
