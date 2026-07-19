@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: sparkles-travel-planner
+name: Travel Planner
+tagline: Organize passagens, hotéis, ingressos e roteiros de viagem
+icon: https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+category: travel
+version: "1.0.0"
+port: 8080
+description: >-
+  Um app pessoal para organizar viagens: cadastre passagens, hotéis e
+  ingressos com anexos (vouchers em PDF/imagem), acompanhe o total de
+  gastos, veja a linha do tempo da viagem e visualize os locais no mapa.
+  Dados guardados localmente no seu Umbrel, sem depender de nenhum
+  serviço externo além de busca de endereço (OpenStreetMap) para o mapa.
+developer: gbl
+website: ""
+submitter: gbl
+submission: "https://github.com/gbletsch/travel-planner"
+repo: "https://github.com/gbletsch/travel-planner"
+support: "https://github.com/gbletsch/travel-planner"
+gallery: []
+releaseNotes: >-
+  First release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

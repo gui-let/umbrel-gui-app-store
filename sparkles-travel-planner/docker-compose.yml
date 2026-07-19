@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  # Todo app do Umbrel precisa desse serviço -- é o proxy reverso do
+  # próprio Umbrel, responsável por rotear o tráfego HTTPS de fora até o
+  # seu container, além de cuidar da autenticação (login do Umbrel) na
+  # frente do seu app. APP_HOST/APP_PORT dizem pra ele onde o container
+  # "web" (definido abaixo) está escutando.
+  app_proxy:
+    environment:
+      APP_HOST: sparkles-travel-planner_web_1
+      APP_PORT: 8080
+
+  web:
+    image: gbletsch/travel-planner:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      PORT: "8080"
+      DB_PATH: /app/data/app.db
+      UPLOADS_DIR: /app/data/uploads
+    volumes:
+      # ${APP_DATA_DIR} é uma variável que o próprio Umbrel expande
+      # automaticamente para a pasta de dados reservada deste app
+      # (algo como /home/umbrel/umbrel/app-data/gbletsch-travel-planner) --
+      # o mesmo princípio do volume ./data:/app/data que já usávamos no
+      # docker-compose.yml genérico, só que gerenciado pelo Umbrel em vez
+      # de por você manualmente.
+      - ${APP_DATA_DIR}/data:/app/data
+    networks:
+      default:
+        # O Umbrel gera essa variável automaticamente a partir do "id" no
+        # umbrel-app.yml: maiúsculas, hífens viram underscore, prefixo
+        # APP_ e sufixo _IP -- "gbletsch-travel-planner" vira
+        # APP_GBLETSCH_TRAVEL_PLANNER_IP. Cada app instalado ganha um IP
+        # fixo dentro da rede interna do Umbrel.
+        ipv4_address: $APP_GBLETSCH_TRAVEL_PLANNER_IP
