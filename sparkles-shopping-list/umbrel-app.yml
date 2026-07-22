@@ -2,9 +2,9 @@ manifestVersion: 1
 id: sparkles-shopping-list
 name: Shopping List
 tagline: Lista de compras
-icon: https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+icon: https://www.freepnglogos.com/uploads/shopping-bag-png/shopping-bag-store-guide-west-cornwall-shopping-park-13.png
 category: utils
-version: "1.0.0"
+version: "1.0.1"
 port: 5173
 description: >-
   Um app pessoal para organizar lista de compras.
@@ -16,7 +16,7 @@ repo: "https://github.com/gbletsch/"
 support: "https://github.com/gbletsch/"
 gallery: []
 releaseNotes: >-
-  First release
+  Trocando ícone
 dependencies: []
 path: ""
 defaultUsername: ""
