@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: sparkles-shopping-list
+name: Shopping List
+tagline: Lista de compras
+icon: https://www.freepnglogos.com/uploads/dog-png/dog-png-cute-puppies-images-clkerm-vector-clip-2.png
+category: utils
+version: "1.0.0"
+port: 5173
+description: >-
+  Um app pessoal para organizar lista de compras.
+developer: gbl
+website: ""
+submitter: gbl
+submission: "https://github.com/gbletsch/"
+repo: "https://github.com/gbletsch/"
+support: "https://github.com/gbletsch/"
+gallery: []
+releaseNotes: >-
+  First release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
